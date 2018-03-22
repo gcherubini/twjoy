@@ -1,0 +1,31 @@
+{
+  "name": "twjoy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcherubini/twjoy.git"
+  },
+  "keywords": [
+    "tw",
+    "joy",
+    "test"
+  ],
+  "author": "cherubini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcherubini/twjoy/issues"
+  },
+  "homepage": "https://github.com/gcherubini/twjoy#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
