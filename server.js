@@ -1,20 +1,11 @@
-const express = require('express')
-const app = express()
-const MongoClient = require('mongodb').MongoClient
+var app = require('./app');
+var port = process.env.PORT || 3000;
 
-const dbName = "twjoy"
-const helloEndpoint = "/hello"
-const dbHost = "mongodb://localhost:27017/" + dbName
-
-app.listen(3000, function() {
-    console.log('listening on 3000')
+var server = app.listen(port, function() {
+    console.log('Express server listening on port ' + port)
 })
 
-MongoClient.connect(dbHost, function(err, db) {
-    if (err) throw err;
-    console.log("Database created!");
-    db.close();
-});
+const helloEndpoint = "/hello"
 
 app.get(helloEndpoint, (req, res) => {
     res.send('Hello Bob')
